@@ -3,3 +3,8 @@
 ################################################################################
 
 /SampleTemplates/packages
+/SampleTemplates/SampleBrowser/obj/Debug
+/SampleTemplates/SampleBrowser/bin/Debug
+/SampleTemplates/IG_WPF_Library/bin/Debug
+/SampleTemplates/IG_WPF_Library/obj/Debug
+/SampleTemplates/.vs/SampleTemplates/v14

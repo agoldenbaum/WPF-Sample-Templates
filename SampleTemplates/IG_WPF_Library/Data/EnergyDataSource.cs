@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace IG_WPF_Library
 {
-    public class EnergyDataSource : List<EnergyProduction>
+    public class EnergyDataSource : ObservableCollection<EnergyProduction>
     {
         public EnergyDataSource()
         {

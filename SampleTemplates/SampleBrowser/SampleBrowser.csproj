@@ -87,6 +87,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="XamDataChart\XamDataChartCategorySeries.xaml.cs">
+      <DependentUpon>XamDataChartCategorySeries.xaml</DependentUpon>
+    </Compile>
     <Compile Include="XamDataChart\XamDataChartBubbleSeries.xaml.cs">
       <DependentUpon>XamDataChartBubbleSeries.xaml</DependentUpon>
     </Compile>
@@ -135,6 +138,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="XamDataChart\XamDataChartCategorySeries.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="XamDataChart\XamDataChartBubbleSeries.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

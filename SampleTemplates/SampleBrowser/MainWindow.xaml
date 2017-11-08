@@ -16,7 +16,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <local:XDGHeterogeneous Grid.Row="0" Grid.Column="0"/>
+        <local:XamDataChartCategorySeries Grid.Row="0" Grid.Column="0"/>
         <local:XDGHomogeneous Grid.Row="0" Grid.Column="1"/>
         <local:XDGStandard Grid.Row="1" Grid.Column="0"/>
         <local:XDGWithCombo Grid.Row="1" Grid.Column="1"/>
