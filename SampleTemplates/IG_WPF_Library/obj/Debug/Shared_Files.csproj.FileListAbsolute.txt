@@ -1,5 +1,0 @@
-C:\Users\agoldenbaum\Documents\Visual Studio 2015\Projects\SampleTemplates\IG_WPF_Library\bin\Debug\IG_WPF_Library.dll
-C:\Users\agoldenbaum\Documents\Visual Studio 2015\Projects\SampleTemplates\IG_WPF_Library\bin\Debug\IG_WPF_Library.pdb
-C:\Users\agoldenbaum\Documents\Visual Studio 2015\Projects\SampleTemplates\IG_WPF_Library\obj\Debug\Shared_Files.csprojResolveAssemblyReference.cache
-C:\Users\agoldenbaum\Documents\Visual Studio 2015\Projects\SampleTemplates\IG_WPF_Library\obj\Debug\IG_WPF_Library.dll
-C:\Users\agoldenbaum\Documents\Visual Studio 2015\Projects\SampleTemplates\IG_WPF_Library\obj\Debug\IG_WPF_Library.pdb
