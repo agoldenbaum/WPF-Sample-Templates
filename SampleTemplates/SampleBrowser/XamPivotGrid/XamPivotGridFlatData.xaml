@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="SampleBrowser.XamPivotGridFlatData"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:ig="http://schemas.infragistics.com/xaml"
+             xmlns:igOlap="http://schemas.infragistics.com/olap"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SampleBrowser"
+             xmlns:data="clr-namespace:IG_WPF_Library;assembly=IG_WPF_Library"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Resources>
+            <data:SalesDataSample x:Key="dataSample"/>
+            <igOlap:FlatDataSource x:Key="dataSource" ItemsSource="{StaticResource dataSample}" Columns="[Date].[Date]" Rows="[City].[City]" Measures="AmountOfSale"/>
+        </Grid.Resources>
+
+        <ig:XamPivotGrid DataSource="{StaticResource dataSource}"/>
+
+        <ig:Expander IsExpanded="True" Grid.Column="1">
+            <ig:XamPivotDataSelector x:Name="dataSelector" DataSource="{StaticResource dataSource}" />
+        </ig:Expander>
+        
+    </Grid>
+</UserControl>

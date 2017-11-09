@@ -20,9 +20,38 @@ namespace SampleBrowser
     /// </summary>
     public partial class MainWindow : Window
     {
+        SamplesViewModel svm = new SamplesViewModel();
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = svm;
+        }
+
+        private void controlCombo_SelectedItemChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
+        {
+            switch ((ControlType)e.NewValue)
+            {
+                case ControlType.XamDataChart:
+                    svm.PopulateXamDataChartSamples();
+                    break;
+                case ControlType.XamDataGrid:
+                    svm.PopulateXamDataGridSamples();
+                    break;
+                case ControlType.XamGrid:
+                    svm.PopulateXamGridSamples();
+                    break;
+                case ControlType.XamPivotGrid:
+                    svm.PopulateXamPivotGridSamples();
+                    break;
+            }  
+        }
+
+        private void sampleCombo_SelectedItemChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
+        {            
+            UserControl uc = Activator.CreateInstance(((SampleInfo)e.NewValue).UserControlType) as UserControl;
+            userControlContainer.Children.Clear();
+            userControlContainer.Children.Add(uc);
+            GC.Collect();
         }
     }
 }
