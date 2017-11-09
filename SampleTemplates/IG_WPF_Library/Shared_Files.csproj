@@ -45,6 +45,7 @@
     <Compile Include="Data\EmissionsData.cs" />
     <Compile Include="Data\EnergyDataSource.cs" />
     <Compile Include="Data\NestedSampleGridData.cs" />
+    <Compile Include="Data\SalesDataSample.cs" />
     <Compile Include="Data\ScatterData.cs" />
     <Compile Include="GridViewModels.cs" />
     <Compile Include="ObservableModel.cs" />

@@ -47,6 +47,14 @@
       <HintPath>..\packages\Infragistics.WPF.Controls.Grids.XamGrid.17.1.20171.2073\lib\InfragisticsWPF.Controls.Grids.XamGrid.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="InfragisticsWPF.Controls.Grids.XamPivotGrid, Version=17.1.20171.2073, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\packages\Infragistics.WPF.Controls.Grids.XamPivotGrid.17.1.20171.2073\lib\InfragisticsWPF.Controls.Grids.XamPivotGrid.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="InfragisticsWPF.Controls.Menus.XamDataTree, Version=17.1.20171.2073, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\packages\Infragistics.WPF.Controls.Menus.XamDataTree.17.1.20171.2073\lib\InfragisticsWPF.Controls.Menus.XamDataTree.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="InfragisticsWPF.Controls.Menus.XamMenu, Version=17.1.20171.2073, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
       <HintPath>..\packages\Infragistics.WPF.Controls.Menus.XamMenu.17.1.20171.2073\lib\InfragisticsWPF.Controls.Menus.XamMenu.dll</HintPath>
       <Private>True</Private>
@@ -63,8 +71,20 @@
       <HintPath>..\packages\Infragistics.WPF.DataVisualization.17.1.20171.2073\lib\InfragisticsWPF.DataVisualization.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="InfragisticsWPF.DragDrop, Version=17.1.20171.2073, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\packages\Infragistics.WPF.DragDrop.17.1.20171.2073\lib\InfragisticsWPF.DragDrop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="InfragisticsWPF.Editors, Version=17.1.20171.2073, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
       <HintPath>..\packages\Infragistics.WPF.Editors.17.1.20171.2073\lib\InfragisticsWPF.Editors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="InfragisticsWPF.Olap, Version=17.1.20171.2073, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\packages\Infragistics.WPF.Olap.17.1.20171.2073\lib\InfragisticsWPF.Olap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="InfragisticsWPF.Olap.FlatData, Version=17.1.20171.2073, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\packages\Infragistics.WPF.Olap.FlatData.17.1.20171.2073\lib\InfragisticsWPF.Olap.FlatData.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -87,6 +107,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="SamplesViewModel.cs" />
     <Compile Include="XamDataChart\XamDataChartCategorySeries.xaml.cs">
       <DependentUpon>XamDataChartCategorySeries.xaml</DependentUpon>
     </Compile>
@@ -125,6 +146,9 @@
     </Compile>
     <Compile Include="XamGrid\XamGridWithCombo.xaml.cs">
       <DependentUpon>XamGridWithCombo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XamPivotGrid\XamPivotGridFlatData.xaml.cs">
+      <DependentUpon>XamPivotGridFlatData.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -190,6 +214,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="XamPivotGrid\XamPivotGridFlatData.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -209,7 +237,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
